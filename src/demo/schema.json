@@ -1,0 +1,201 @@
+{
+  "_designableId": "0nii4n9ym50",
+  "properties": {
+    "contextPath": {
+      "_designableId": "z1v63jox7p7",
+      "default": "",
+      "name": "contextPath",
+      "required": false,
+      "title": "ContextPath",
+      "type": "string",
+      "x-component": "Input",
+      "x-component-props": {
+        "style": {
+          "height": "40px"
+        }
+      },
+      "x-decorator": "FormItem",
+      "x-decorator-props": {
+        "asterisk": false,
+        "feedbackLayout": "loose",
+        "gridSpan": 0,
+        "labelAlign": "left",
+        "layout": "vertical",
+        "style": {
+          "display": "block",
+          "height": "auto",
+          "margin": "15px 15px 15px 15px",
+          "padding": "0px 0px 0px 0px",
+          "width": "auto"
+        },
+        "tooltip": "ContextPath为Docker构建的执行上下文。填写相对于代码根目录的路径，如target，如果不填则为Dockerfile文件所在目录"
+      },
+      "x-index": 3,
+      "x-validator": []
+    },
+    "dockerfilePath": {
+      "_designableId": "sgpi040u0sw",
+      "default": "",
+      "name": "dockerfilePath",
+      "required": true,
+      "title": "Dockerfile路径",
+      "type": "string",
+      "x-component": "Input",
+      "x-component-props": {
+        "style": {
+          "height": "40px"
+        }
+      },
+      "x-decorator": "FormItem",
+      "x-decorator-props": {
+        "asterisk": true,
+        "feedbackLayout": "loose",
+        "gridSpan": 0,
+        "labelAlign": "left",
+        "layout": "vertical",
+        "style": {
+          "display": "block",
+          "height": "auto",
+          "margin": "15px 15px 15px 15px",
+          "padding": "0px 0px 0px 0px",
+          "width": "auto"
+        },
+        "tooltip": "Dockerfile目录, 如:git项目名称为test, 即填写: test/Dockerfile. 格式为: <git项目名称>/<Dockerfile目录相对地址>"
+      },
+      "x-index": 2,
+      "x-validator": []
+    },
+    "imageUrl": {
+      "_designableId": "ylbe4y6woqq",
+      "default": "",
+      "name": "imageUrl",
+      "required": true,
+      "title": "镜像完整地址",
+      "type": "string",
+      "x-component": "Input",
+      "x-component-props": {
+        "style": {
+          "height": "40px"
+        }
+      },
+      "x-decorator": "FormItem",
+      "x-decorator-props": {
+        "asterisk": true,
+        "feedbackLayout": "loose",
+        "gridSpan": 0,
+        "labelAlign": "left",
+        "layout": "vertical",
+        "style": {
+          "display": "block",
+          "height": "auto",
+          "margin": "15px 15px 15px 15px",
+          "padding": "0px 0px 0px 0px",
+          "width": "auto"
+        },
+        "tooltip": "融合云<容器镜像>服务，镜像完整地址。镜像tag, 可以选择环境变量。使用示例: cr.d.xiaomi.net/test/test:$CI_COMMIT_SHORT_SHA。镜像tag, 目前支持:CI_COMMIT_SHA, CI_COMMIT_SHORT_SHA, CI_COMMIT_TAG, CI_COMMIT_BRANCH, CI_PROJECT_NAME"
+      },
+      "x-index": 1,
+      "x-validator": []
+    },
+    "registry_name": {
+      "_designableId": "7dfxco0o8sh",
+      "default": "cr.d.xiaomi.net",
+      "enum": [
+        {
+          "children": [],
+          "label": "cr.d.xiaomi.net"
+        }
+      ],
+      "name": "registry_name",
+      "required": true,
+      "title": "镜像仓库",
+      "x-component": "Select",
+      "x-component-props": {
+        "style": {
+          "display": "block",
+          "height": "40px"
+        }
+      },
+      "x-decorator": "FormItem",
+      "x-decorator-props": {
+        "asterisk": true,
+        "labelAlign": "left",
+        "style": {
+          "display": "block",
+          "height": "auto",
+          "margin": "15px 15px 15px 15px"
+        },
+        "tooltip": "目前仅支持cr.d.xiaomi.net"
+      },
+      "x-index": 0,
+      "x-validator": []
+    },
+    "registry_password": {
+      "_designableId": "fb99321vxxj",
+      "default": "",
+      "description": "容器镜像服务,用户设置token",
+      "name": "registry_password",
+      "required": true,
+      "title": "Secret Key",
+      "type": "string",
+      "x-component": "Input",
+      "x-component-props": {
+        "style": {
+          "height": "40px"
+        }
+      },
+      "x-decorator": "FormItem",
+      "x-decorator-props": {
+        "asterisk": true,
+        "feedbackLayout": "loose",
+        "gridSpan": 0,
+        "labelAlign": "left",
+        "layout": "vertical",
+        "style": {
+          "display": "block",
+          "height": "auto",
+          "margin": "15px 15px 15px 15px",
+          "padding": "0px 0px 0px 0px",
+          "width": "auto"
+        },
+        "tooltip": "融合云<容器镜像>服务，用户设置中的Token"
+      },
+      "x-index": 5,
+      "x-validator": []
+    },
+    "registry_user": {
+      "_designableId": "ow2gj0ea39h",
+      "default": "",
+      "description": "目前填用户名称即可",
+      "name": "registry_user",
+      "required": true,
+      "title": "Access Key",
+      "type": "string",
+      "x-component": "Input",
+      "x-component-props": {
+        "style": {
+          "height": "40px"
+        }
+      },
+      "x-decorator": "FormItem",
+      "x-decorator-props": {
+        "asterisk": true,
+        "feedbackLayout": "loose",
+        "gridSpan": 0,
+        "labelAlign": "left",
+        "layout": "vertical",
+        "style": {
+          "display": "block",
+          "height": "auto",
+          "margin": "15px 15px 15px 15px",
+          "padding": "0px 0px 0px 0px",
+          "width": "auto"
+        },
+        "tooltip": "融合云<容器镜像>服务，用户设置中的Username"
+      },
+      "x-index": 4,
+      "x-validator": []
+    }
+  },
+  "type": "object"
+}

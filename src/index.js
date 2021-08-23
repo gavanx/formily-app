@@ -7,10 +7,11 @@ import reportWebVitals from "./reportWebVitals";
 import FormilyApp from "./demo/FormilyApp";
 import LoginApp from "./demo/LoginApp";
 import { DatePicker } from "antd";
+import SchemaApp from "./demo/SchemaApp";
 
 ReactDOM.render(
   <React.StrictMode>
-    <LoginApp />
+    <SchemaApp />
   </React.StrictMode>,
   document.getElementById("root")
 );
