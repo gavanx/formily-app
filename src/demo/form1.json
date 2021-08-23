@@ -1,0 +1,43 @@
+{
+  "form": {
+    "labelCol": 6,
+    "wrapperCol": 12
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "ncusuflxf4g": {
+        "title": "Select",
+        "x-decorator": "FormItem",
+        "x-component": "Select",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "_designableId": "ncusuflxf4g",
+        "x-index": 0
+      },
+      "wcqrcbfb3sc": {
+        "title": "TextArea",
+        "type": "string",
+        "x-decorator": "FormItem",
+        "x-component": "Input.TextArea",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "_designableId": "wcqrcbfb3sc",
+        "x-index": 1
+      },
+      "rs06xbyi87x": {
+        "title": "Tree Select",
+        "x-decorator": "FormItem",
+        "x-component": "TreeSelect",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "_designableId": "rs06xbyi87x",
+        "x-index": 2
+      }
+    },
+    "_designableId": "lxprtmu6p67"
+  }
+}

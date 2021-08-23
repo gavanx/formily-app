@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "@formily/antd/dist/antd.css";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -8,10 +9,11 @@ import FormilyApp from "./demo/FormilyApp";
 import LoginApp from "./demo/LoginApp";
 import { DatePicker } from "antd";
 import SchemaApp from "./demo/SchemaApp";
+import SchemaApp2 from "./demo/SchemaApp2";
 
 ReactDOM.render(
   <React.StrictMode>
-    <SchemaApp />
+    <SchemaApp2 />
   </React.StrictMode>,
   document.getElementById("root")
 );

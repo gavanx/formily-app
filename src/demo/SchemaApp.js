@@ -91,6 +91,7 @@ const SchemaField = createSchemaField({
     },
   },
 });
+const form1 = require("./form1.json");
 const schema = require("./schema.json");
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
