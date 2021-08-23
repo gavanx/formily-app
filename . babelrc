@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": true
+      },
+      'antd',
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@formily/antd",
+        "libraryDirectory": "esm",
+        "style": true
+      },
+      '@formily/antd',
+    ]
+  ]
+}

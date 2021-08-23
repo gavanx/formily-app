@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import FormilyApp from "./demo/FormilyApp";
+import LoginApp from "./demo/LoginApp";
+import { DatePicker } from "antd";
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormilyApp />
+    <LoginApp />
   </React.StrictMode>,
   document.getElementById("root")
 );
